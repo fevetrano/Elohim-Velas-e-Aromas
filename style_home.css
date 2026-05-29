@@ -1,0 +1,579 @@
+/* ============================================================
+   ESTILOS ORIGINAIS (MANTIDOS INTEGRALMENTE)
+============================================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    max-width: 100vw;
+    overflow-x: hidden; 
+}
+
+section {
+    scroll-margin-top: 100px; 
+}
+
+body {
+    background-color: #ebd9cb;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 60px 20px; 
+}
+
+#header {
+    background-color: #ebd9cb;
+    padding: 10px 5%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header-container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo img {
+    height: 300px;
+    width: auto;
+    display: block;
+    margin-left: 70px;
+}
+
+.menu-principal ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding: 0;
+}
+
+.menu-principal ul li a {
+    text-decoration: none;
+    color: #474542;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+    transition: 0.3s;
+}
+
+.menu-principal ul li a:hover {
+    color: #ffffff;
+}
+
+#hero-section {
+    display: flex;
+    width: 100%;
+    height: 600px;
+    padding: 0;
+}
+
+.bloco-texto {
+    flex: 1;
+    background-color: #ebd9cb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.bloco-imagem {
+    flex: 1;
+    background-image: url('assets/vela_amarela.jpeg');
+    background-color: #ebd9cb;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-left-radius: 5%;
+}
+
+.divisor-elegante {
+    width: 50px;
+    height: 1px;
+    background-color: #474542;
+    margin: 20px auto;
+    opacity: 0.5;
+}
+
+.txt-hero p {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #474542;
+}
+
+#diferenciais {
+    padding: 80px 20px;
+    background-color: #f5e7dc;
+}
+
+#titulo-dif {
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Serif', serif;
+    color: #474542;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.container-diferenciais {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.item-diferencial {
+    flex: 1;
+    text-align: center;
+    max-width: 300px;
+}
+
+.item-diferencial img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.item-diferencial:hover img {
+    transform: scale(1.2);
+}
+
+.item-diferencial h3 {
+    color: #474542;
+    margin-bottom: 15px;
+    font-family: 'Serif', serif;
+}
+
+.item-diferencial p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+#catalogo-section {
+    background-color: #dcc9b8;
+    text-align: center;
+    padding: 80px;
+}
+
+#titulo-produtos {
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Serif', serif;
+    color: #474542;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}   
+
+#grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-produto {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.card-produto:hover {
+    transform: scale(1.1);
+}
+
+.produto-img {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+}
+
+.produto-legenda {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.produto-legenda h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #474542;
+}
+
+.produto-legenda p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.produto-legenda span {
+    font-weight: bold;
+    color: #ebd9cb;
+}
+
+#sobre-nos {
+    padding: 100px 5%;
+    background-color: #f5e7dc;
+}
+
+.container-sobre {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 60px;
+}
+
+.sobre-imagem img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+}
+
+.sobre-texto h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Serif', serif;
+    color: #474542;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.sobre-texto p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #474542;
+}
+
+#missao-valores {
+    margin-top: 55px;
+    padding: 80px 5%;
+    background-color: #ebd9cb;
+}
+
+.container-pilares {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pilar-card {
+    flex: 1;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.pilar-card:hover {
+    transform: translateY(-5px);
+}
+
+.pilar-card h3 {
+    color: #474542;
+    margin: 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#footer {
+    background-color: #474542;
+    color: #ebd9cb;
+    padding: 60px 5% 20px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-col {
+    flex: 1;
+}
+
+.footer-col h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-family: 'Serif', serif;
+}
+
+.footer-col h4 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-col p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    opacity: 0.8;
+    max-width: 300px;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #ebd9cb;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 5px;
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #ebd9cb;
+    font-size: 0.9rem;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid rgba(235, 217, 203, 0.2);
+    text-align: center;
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+.whatsapp-fixed {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.whatsapp-fixed img {
+    width: 35px;
+    height: 35px;
+}
+
+.whatsapp-fixed:hover {
+    transform: scale(1.1);
+    background-color: #20ba5a;
+}
+
+/* ============================================================
+   RESPONSIVIDADE FINAL (MOBILE) - 100% ATUALIZADO
+============================================================ */
+
+@media (max-width: 768px) {
+    /* Header Fix */
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #logo img {
+        height: 120px; /* Reduzido para caber no celular */
+        margin-left: 0; /* Remove o margin-left que estava empurrando para o lado */
+        margin-bottom: 10px;
+    }
+
+    .menu-principal ul {
+        flex-direction: column;
+        gap: 15px;
+        margin: 10px 0;
+    }
+
+    /* Hero Fix (Resolve o espaço à direita e o corte da imagem) */
+    #hero-section {
+    display: flex;
+    width: 100%;
+    height: 600px;
+    padding: 0 !important; /* Força o zeramento tirando qualquer margem bege em volta */
+    margin: 0 !important;
+    }
+
+    .bloco-texto {
+        width: 100%;
+        padding: 40px 20px;
+        flex: none; /* Desativa a divisão de 50% do desktop */
+    }
+
+    .bloco-imagem {
+        display: block; /* Garante que a div seja renderizada como bloco */
+        width: 100%;
+        height: 400px; /* ESSENCIAL: Sem isso, a imagem fica com altura 0 e não aparece */
+        background-image: url('assets/vela_amarela.jpeg'); /* Reforça o caminho da imagem */
+        background-size: cover;
+        background-position: center;
+        border-top-left-radius: 0; 
+        margin-top: -10px; /* Ajuste opcional para colar melhor no bloco de cima */
+    }
+
+    .txt-hero p {
+        font-size: 1.4rem; /* Ajuste para o texto não estourar a tela */
+        text-align: center;
+    }
+
+    /* Outras Seções (Diferenciais, Sobre e Pilares) */
+    .container-diferenciais, .container-sobre, .container-pilares {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sobre-texto h2 { text-align: center !important; }
+
+    #grid-produtos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Footer Fix - Alinhamento Centralizado Total */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .footer-col {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza itens internos da coluna */
+    }
+
+    .footer-col p {
+        max-width: 100%;
+        margin: 0 auto; /* Garante centralização do bloco de texto */
+    }
+
+    .footer-col ul {
+        padding: 0;
+    }
+
+    .footer-col ul li {
+        text-align: center;
+    }
+
+    .social-icons { 
+        justify-content: center; 
+        width: 100%;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    /* WhatsApp Fixo */
+    .whatsapp-fixed {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #grid-produtos {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ============================================================
+   AJUSTES PARA TABLETS (iPad Pro e Air)
+============================================================ */
+
+@media (min-width: 769px) and (max-width: 1180px) {
+    
+    /* Header - Ajuste de escala */
+    #logo img {
+        height: 180px; /* Logo um pouco menor que no desktop */
+        margin-left: 20px; /* Reduz o recuo excessivo */
+    }
+
+    .menu-principal ul {
+        gap: 20px; /* Diminui o espaço entre os links para caberem na linha */
+        margin: 30px;
+    }
+
+    .menu-principal ul li a {
+        font-size: 0.8rem; /* Fonte levemente menor */
+    }
+
+    /* Hero Section - Ajuste de Proporção */
+    #hero-section {
+        height: 500px; /* Reduz a altura total para não ocupar o iPad todo */
+    }
+
+    .bloco-texto {
+        padding: 30px;
+    }
+
+    .txt-hero p {
+        font-size: 1.5rem; /* Ajuste para o texto não brigar com a foto */
+        letter-spacing: 3px;
+        text-align: center;
+    }
+
+    .bloco-imagem {
+        background-position: center; /* Garante que a vela amarela fique centralizada */
+        border-top-left-radius: 8%; /* Arredondado um pouco mais evidente no tablet */
+    }
+
+    .divisor-elegante {
+        margin: 15px auto;
+    }
+}
