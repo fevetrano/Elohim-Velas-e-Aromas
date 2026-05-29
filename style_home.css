@@ -73,11 +73,12 @@ section {
     color: #ffffff;
 }
 
+/* CORREÇÃO DO HERO: padding zerado para a imagem ir até as bordas */
 #hero-section {
     display: flex;
     width: 100%;
     height: 600px;
-    padding: 0;
+    padding: 0; 
 }
 
 .bloco-texto {
@@ -424,8 +425,8 @@ section {
     }
     
     #logo img {
-        height: 120px; /* Reduzido para caber no celular */
-        margin-left: 0; /* Remove o margin-left que estava empurrando para o lado */
+        height: 120px;
+        margin-left: 0;
         margin-bottom: 10px;
     }
 
@@ -437,32 +438,30 @@ section {
 
     /* Hero Fix (Resolve o espaço à direita e o corte da imagem) */
     #hero-section {
-    display: flex;
-    width: 100%;
-    height: 600px;
-    padding: 0 !important; /* Força o zeramento tirando qualquer margem bege em volta */
-    margin: 0 !important;
+        flex-direction: column;
+        height: auto;          
+        display: flex;
     }
 
     .bloco-texto {
         width: 100%;
         padding: 40px 20px;
-        flex: none; /* Desativa a divisão de 50% do desktop */
+        flex: none;
     }
 
     .bloco-imagem {
-        display: block; /* Garante que a div seja renderizada como bloco */
+        display: block;
         width: 100%;
-        height: 400px; /* ESSENCIAL: Sem isso, a imagem fica com altura 0 e não aparece */
-        background-image: url('assets/vela_amarela.jpeg'); /* Reforça o caminho da imagem */
+        height: 400px;
+        background-image: url('assets/vela_amarela.jpeg');
         background-size: cover;
         background-position: center;
         border-top-left-radius: 0; 
-        margin-top: -10px; /* Ajuste opcional para colar melhor no bloco de cima */
+        margin-top: -10px;
     }
 
     .txt-hero p {
-        font-size: 1.4rem; /* Ajuste para o texto não estourar a tela */
+        font-size: 1.4rem;
         text-align: center;
     }
 
@@ -491,12 +490,12 @@ section {
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center; /* Centraliza itens internos da coluna */
+        align-items: center;
     }
 
     .footer-col p {
         max-width: 100%;
-        margin: 0 auto; /* Garante centralização do bloco de texto */
+        margin: 0 auto;
     }
 
     .footer-col ul {
@@ -538,24 +537,24 @@ section {
 
 @media (min-width: 769px) and (max-width: 1180px) {
     
-    /* Header - Ajuste de escala */
     #logo img {
-        height: 180px; /* Logo um pouco menor que no desktop */
-        margin-left: 20px; /* Reduz o recuo excessivo */
+        height: 180px;
+        margin-left: 20px;
     }
 
     .menu-principal ul {
-        gap: 20px; /* Diminui o espaço entre os links para caberem na linha */
+        gap: 20px;
         margin: 30px;
     }
 
     .menu-principal ul li a {
-        font-size: 0.8rem; /* Fonte levemente menor */
+        font-size: 0.8rem;
     }
 
     /* Hero Section - Ajuste de Proporção */
     #hero-section {
-        height: 500px; /* Reduz a altura total para não ocupar o iPad todo */
+        height: 500px;
+        padding: 0; /* Correção replicada para tablets */
     }
 
     .bloco-texto {
@@ -563,14 +562,14 @@ section {
     }
 
     .txt-hero p {
-        font-size: 1.5rem; /* Ajuste para o texto não brigar com a foto */
+        font-size: 1.5rem;
         letter-spacing: 3px;
         text-align: center;
     }
 
     .bloco-imagem {
-        background-position: center; /* Garante que a vela amarela fique centralizada */
-        border-top-left-radius: 8%; /* Arredondado um pouco mais evidente no tablet */
+        background-position: center;
+        border-top-left-radius: 8%;
     }
 
     .divisor-elegante {
